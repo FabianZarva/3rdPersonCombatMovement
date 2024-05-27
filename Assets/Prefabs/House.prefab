@@ -109,7 +109,7 @@ Transform:
   - {fileID: 2019022314978913447}
   - {fileID: 4896525110665547183}
   m_Father: {fileID: 0}
-  m_RootOrder: -1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &6576417088127589712
 BoxCollider:
@@ -1895,6 +1895,10 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 6576417088127589719}
     m_Modifications:
+    - target: {fileID: 6465339448868765719, guid: c9af141dd4aca7a41a51f18308a76180, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 6413720591926908022, guid: 5f2a3ea8f30f8a04f9c3fadd40b0cdc9, type: 3}
     - target: {fileID: 7304122541039932680, guid: c9af141dd4aca7a41a51f18308a76180, type: 3}
       propertyPath: m_Name
       value: extra windows big
@@ -1905,7 +1909,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7932708577761529778, guid: c9af141dd4aca7a41a51f18308a76180, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.026
+      value: -2.15
       objectReference: {fileID: 0}
     - target: {fileID: 7932708577761529778, guid: c9af141dd4aca7a41a51f18308a76180, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1913,7 +1917,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7932708577761529778, guid: c9af141dd4aca7a41a51f18308a76180, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -4.14
+      value: -4.04
       objectReference: {fileID: 0}
     - target: {fileID: 7932708577761529778, guid: c9af141dd4aca7a41a51f18308a76180, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1947,6 +1951,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[2]
       value: 
       objectReference: {fileID: 2100000, guid: f52aa038ebcc1f941ae867b9b5461f1d, type: 2}
+    - target: {fileID: 9105584314199078109, guid: c9af141dd4aca7a41a51f18308a76180, type: 3}
+      propertyPath: m_Materials.Array.data[3]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5898e00cc9c75f646b1b2ea8d5c8206d, type: 2}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: c9af141dd4aca7a41a51f18308a76180, type: 3}
