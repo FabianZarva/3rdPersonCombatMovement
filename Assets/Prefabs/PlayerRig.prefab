@@ -62,8 +62,8 @@ MonoBehaviour:
   m_LookaheadTime: 0
   m_LookaheadSmoothing: 0
   m_LookaheadIgnoreY: 0
-  m_HorizontalDamping: 0.5
-  m_VerticalDamping: 0.5
+  m_HorizontalDamping: 0
+  m_VerticalDamping: 0.1
   m_ScreenX: 0.5
   m_ScreenY: 0.5
   m_DeadZoneWidth: 0
@@ -99,9 +99,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_BindingMode: 1
   m_FollowOffset: {x: 0, y: 0, z: -10}
-  m_XDamping: 1
-  m_YDamping: 1
-  m_ZDamping: 1
+  m_XDamping: 0
+  m_YDamping: 0
+  m_ZDamping: 0
   m_AngularDampingMode: 0
   m_PitchDamping: 0
   m_YawDamping: 0
@@ -195,6 +195,24 @@ MonoBehaviour:
     m_ParentHash: 585382737
   - m_Hash: -479991077
     m_ParentHash: 756556552
+  - m_Hash: 168036699
+    m_ParentHash: -479991077
+  - m_Hash: 641460239
+    m_ParentHash: -479991077
+  - m_Hash: 1972345908
+    m_ParentHash: -479991077
+  - m_Hash: 1909800350
+    m_ParentHash: -479991077
+  - m_Hash: 318495910
+    m_ParentHash: 756556552
+  - m_Hash: -1947038436
+    m_ParentHash: 756556552
+  - m_Hash: -51004022
+    m_ParentHash: 756556552
+  - m_Hash: -1063883918
+    m_ParentHash: 756556552
+  - m_Hash: -946407516
+    m_ParentHash: 756556552
 --- !u!1 &2152870917979682585
 GameObject:
   m_ObjectHideFlags: 0
@@ -220,7 +238,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2152870917979682585}
   m_LocalRotation: {x: 0.000000013059725, y: 0.000000059604645, z: -0.0000000017830804, w: 1}
-  m_LocalPosition: {x: 0.00000008940697, y: 5.1279006e-15, z: 9.999998}
+  m_LocalPosition: {x: 0.00000014901161, y: -7.6239484e-14, z: 9.999999}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -270,7 +288,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4113735312046616049}
-  m_LocalRotation: {x: 1.8402491e-16, y: -0.6963116, z: 1.7853085e-16, w: 0.7177396}
+  m_LocalRotation: {x: -2.7360054e-15, y: -0.6963116, z: -2.654322e-15, w: 0.7177397}
   m_LocalPosition: {x: 4.6217875, y: 1.4250059, z: -8.373368}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1098,7 +1116,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5880632168302141705}
-  m_LocalRotation: {x: 0.08672273, y: -0.015110761, z: 0.001315549, w: 0.99611706}
+  m_LocalRotation: {x: 0.086722724, y: -0.015110761, z: 0.0013155565, w: 0.99611706}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0

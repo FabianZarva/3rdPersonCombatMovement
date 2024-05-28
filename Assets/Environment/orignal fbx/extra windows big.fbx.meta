@@ -3,7 +3,32 @@ guid: 5f2a3ea8f30f8a04f9c3fadd40b0cdc9
 ModelImporter:
   serializedVersion: 21202
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: beams
+    second: {fileID: 2100000, guid: 5b38f93b1597f2c4cb75f6ca8ff979a5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: log
+    second: {fileID: 2100000, guid: dabd438a7ed16f54b8b7924215fb8759, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: plaster
+    second: {fileID: 2100000, guid: 5c2889d76ed3c5d418aa372f8a50fdf0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: roof tiles
+    second: {fileID: 2100000, guid: 3097b9b645a0f724abe894d8b04c2e6d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: window
+    second: {fileID: 2100000, guid: 693a010ed9d02a64983f472a0f5fed18, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
