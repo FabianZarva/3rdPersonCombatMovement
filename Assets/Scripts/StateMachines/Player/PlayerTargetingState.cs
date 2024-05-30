@@ -14,7 +14,9 @@ public class PlayerTargetingState : PlayerBaseState
 
     public override void Enter()
     {
-        stateMachine.InputReader.CancelEvent += OnCancel;
+        stateMachine.InputReader.TargetEvent += OnTarget;
+        stateMachine.InputReader.DodgeEvent += OnDodge;
+        stateMachine.InputReader.JumpEvent += OnJump;
 
         stateMachine.Animator.CrossFadeInFixedTime(TargetingBlendTreeHash, CrossFadeDuration);
     }
@@ -37,7 +39,7 @@ public class PlayerTargetingState : PlayerBaseState
             return;
         }
 
-        Vector3 movement = CalculateMovement();
+        Vector3 movement = CalculateMovement(deltaTime);
 
         Move(movement * stateMachine.TargetingMovementSpeed, deltaTime);
 
@@ -48,17 +50,31 @@ public class PlayerTargetingState : PlayerBaseState
 
     public override void Exit()
     {
-        stateMachine.InputReader.CancelEvent -= OnCancel;
+        stateMachine.InputReader.TargetEvent -= OnTarget;
+        stateMachine.InputReader.DodgeEvent -= OnDodge;
+        stateMachine.InputReader.JumpEvent -= OnJump;
     }
 
-    private void OnCancel()
+    private void OnTarget()
     {
         stateMachine.Targeter.Cancel();
 
         stateMachine.SwitchState(new PlayerFreeLookState(stateMachine));
     }
 
-    private Vector3 CalculateMovement()
+    private void OnDodge()
+    {
+        if (stateMachine.InputReader.MovementValue == Vector2.zero) { return; }
+
+        stateMachine.SwitchState(new PlayerDodgingState(stateMachine, stateMachine.InputReader.MovementValue));
+    }
+
+    private void OnJump()
+    {
+        stateMachine.SwitchState(new PlayerJumpingState(stateMachine));
+    }
+
+    private Vector3 CalculateMovement(float deltaTime)
     {
         Vector3 movement = new Vector3();
 
